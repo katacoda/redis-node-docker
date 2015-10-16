@@ -1,0 +1,11 @@
+{
+  "name": "scrapbook-redis-node-docker-example",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "redis": "^0.12.1"
+  }
+}

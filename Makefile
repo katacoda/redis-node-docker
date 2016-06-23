@@ -7,7 +7,7 @@ debug:
 	docker run -it --rm --entrypoint=/bin/bash $(NAME)
 
 run:
-	docker run -it --rm $(NAME)
+	docker run -it --rm -p 3000:3000 $(NAME)
 
 push:
 	docker push $(NAME)

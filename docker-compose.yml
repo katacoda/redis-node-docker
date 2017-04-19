@@ -1,0 +1,11 @@
+redis:
+  image: redis:2.8.21
+  restart: always
+web:
+  # build: .
+  image: katacoda/redis-node-docker-example
+  ports:
+    - 3000:3000
+  links:
+    - redis:redis
+  restart: always
